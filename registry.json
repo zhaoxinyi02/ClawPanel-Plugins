@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "updatedAt": "2026-02-26T00:00:00Z",
+  "plugins": [
+    {
+      "id": "hello-world",
+      "name": "Hello World 示例插件",
+      "version": "1.0.0",
+      "author": "ClawPanel Team",
+      "description": "一个最小化的 OpenClaw 插件示例，演示插件基本结构和开发规范",
+      "homepage": "https://github.com/zhaoxinyi02/ClawPanel-Plugins",
+      "repository": "https://github.com/zhaoxinyi02/ClawPanel-Plugins",
+      "license": "MIT",
+      "category": "basic",
+      "tags": ["示例", "入门", "教程"],
+      "icon": "sparkles",
+      "minOpenClaw": "2025.1.0",
+      "minPanel": "v5.0.0",
+      "gitUrl": "https://github.com/zhaoxinyi02/ClawPanel-Plugins.git",
+      "downloadUrl": "",
+      "downloads": 0,
+      "stars": 0,
+      "screenshot": "",
+      "readme": "# Hello World 插件\n\n这是一个最小化的 OpenClaw 插件示例，用于演示插件的基本结构和开发规范。\n\n## 功能\n\n- 监听消息，当收到 `/hello` 时自动回复问候语\n- 支持自定义问候语和触发关键词\n\n## 配置\n\n| 字段 | 类型 | 默认值 | 说明 |\n|------|------|--------|------|\n| greeting | string | 你好！我是 OpenClaw 插件 👋 | 自定义问候语 |\n| trigger | string | /hello | 触发关键词 |\n| enabled | boolean | true | 是否启用自动回复 |"
+    }
+  ]
+}
