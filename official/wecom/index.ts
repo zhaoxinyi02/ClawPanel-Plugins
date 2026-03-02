@@ -1,0 +1,20 @@
+import type { OpenclawPluginApi } from "./src/compat.js";
+import { emptyPluginConfigSchema } from "./src/compat.js";
+
+import { handleWecomWebhookRequest } from "./src/monitor.js";
+import { setWecomRuntime } from "./src/runtime.js";
+import { wecomPlugin } from "./src/channel.js";
+
+const plugin = {
+  id: "wecom",
+  name: "WeCom",
+  description: "OpenClaw WeCom (WeChat Work) intelligent bot channel plugin",
+  configSchema: emptyPluginConfigSchema(),
+  register(api: OpenclawPluginApi) {
+    setWecomRuntime(api.runtime);
+    api.registerChannel({ plugin: wecomPlugin });
+    api.registerHttpHandler(handleWecomWebhookRequest);
+  },
+};
+
+export default plugin;

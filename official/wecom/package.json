@@ -1,0 +1,67 @@
+{
+  "name": "@openclaw/wecom",
+  "version": "2026.1.30",
+  "type": "module",
+  "description": "OpenClaw WeCom (WeChat Work) intelligent bot channel plugin",
+  "openclaw": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "wecom",
+      "label": "WeCom",
+      "selectionLabel": "WeCom (plugin)",
+      "detailLabel": "WeCom Bot",
+      "docsPath": "/channels/wecom",
+      "docsLabel": "wecom",
+      "blurb": "Enterprise WeCom intelligent bot (API mode) via encrypted webhooks + passive replies.",
+      "aliases": [
+        "wechatwork",
+        "wework",
+        "qywx",
+        "企微",
+        "企业微信"
+      ],
+      "order": 85
+    },
+    "install": {
+      "npmSpec": "@openclaw/wecom",
+      "localPath": "extensions/wecom",
+      "defaultChoice": "npm"
+    }
+  },
+  "clawdbot": {
+    "extensions": [
+      "./index.ts"
+    ],
+    "channel": {
+      "id": "wecom",
+      "label": "WeCom",
+      "selectionLabel": "WeCom (plugin)",
+      "detailLabel": "WeCom Bot",
+      "docsPath": "/channels/wecom",
+      "docsLabel": "wecom",
+      "blurb": "Enterprise WeCom intelligent bot (API mode) via encrypted webhooks + passive replies.",
+      "aliases": [
+        "wechatwork",
+        "wework",
+        "qywx",
+        "企微",
+        "企业微信"
+      ],
+      "order": 85
+    },
+    "install": {
+      "npmSpec": "@openclaw/wecom",
+      "localPath": "extensions/wecom",
+      "defaultChoice": "npm"
+    }
+  },
+  "peerDependencies": {
+    "openclaw": "*",
+    "clawdbot": "*"
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  }
+}
