@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-03-15T00:30:00+08:00",
+  "skills": [
+    {
+      "id": "demo-helper",
+      "name": "Demo Helper",
+      "description": "一个通用演示技能骨架，用于展示技能结构与编写方式。",
+      "version": "1.0.0",
+      "author": "ClawPanel",
+      "tags": ["demo", "template"],
+      "updated_at": 1773505800000,
+      "path": "skills/demo-helper",
+      "files": ["SKILL.md"]
+    },
+    {
+      "id": "self-heal",
+      "name": "Self Heal",
+      "description": "自愈、自诊断、自修复技能，用于发现和处理常见运行问题。",
+      "version": "1.0.0",
+      "author": "ClawPanel",
+      "tags": ["ops", "diagnose", "repair"],
+      "updated_at": 1773505800000,
+      "path": "skills/self-heal",
+      "files": [
+        "SKILL.md",
+        "scripts/evolve.py",
+        "scripts/fix_config.py",
+        "scripts/fix_dependency.py",
+        "scripts/fix_process.py",
+        "scripts/fix_tool.py",
+        "scripts/health_check.py",
+        "scripts/knowledge_base.json",
+        "scripts/verify_fix.py"
+      ]
+    },
+    {
+      "id": "web-fetcher",
+      "name": "Web Fetcher",
+      "description": "抓取网页内容并提取可读文本，适合快速本地网页抓取任务。",
+      "version": "1.0.0",
+      "author": "ClawPanel",
+      "tags": ["web", "python", "tools"],
+      "updated_at": 1773505800000,
+      "path": "skills/web-fetcher",
+      "files": ["skill.json", "index.py"]
+    }
+  ]
+}

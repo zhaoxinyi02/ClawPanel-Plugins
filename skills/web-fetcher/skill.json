@@ -1,0 +1,7 @@
+{
+  "name": "web-fetcher",
+  "displayName": "Web Fetcher",
+  "description": "Fetch webpage content directly with Python requests and extract readable text/title for quick local scraping tasks.",
+  "entry": "index.py",
+  "language": "python"
+}
