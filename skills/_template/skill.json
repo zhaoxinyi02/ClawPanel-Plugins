@@ -1,0 +1,35 @@
+{
+  "name": "your-skill-id",
+  "displayName": "Your Skill Name",
+  "description": "一句话描述技能用途。",
+  "version": "1.0.0",
+  "author": "ClawPanel",
+  "entry": "index.py",
+  "language": "python",
+  "tags": ["demo"],
+  "config": [
+    {
+      "key": "config.baseUrl",
+      "label": "API Base URL",
+      "type": "text",
+      "placeholder": "https://api.example.com/v1",
+      "required": true,
+      "help": "服务端接口基地址"
+    },
+    {
+      "key": "config.apiKey",
+      "label": "API Key",
+      "type": "password",
+      "required": true,
+      "help": "用于调用第三方接口的密钥"
+    },
+    {
+      "key": "config.modelId",
+      "label": "Model ID",
+      "type": "text",
+      "placeholder": "gpt-5.4",
+      "required": false,
+      "help": "如技能依赖某个特定模型，可在此填写"
+    }
+  ]
+}

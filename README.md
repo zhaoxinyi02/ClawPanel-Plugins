@@ -2,7 +2,7 @@
 
 # ClawPanel-Plugins
 
-**ClawPanel 官方插件仓库 — OpenClaw 插件生态中心**
+**ClawPanel 官方插件与技能仓库 — OpenClaw 扩展生态中心**
 
 [![ClawPanel](https://img.shields.io/badge/ClawPanel-v5.0.3-violet?style=flat-square)](https://github.com/zhaoxinyi02/ClawPanel)
 [![License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](LICENSE)
@@ -16,13 +16,22 @@
 
 ## 简介
 
-本仓库是 [ClawPanel](https://github.com/zhaoxinyi02/ClawPanel) 的官方插件仓库。ClawPanel 的「插件中心」会从此仓库读取 `registry.json` 获取可用插件列表，用户可以在面板中一键安装、配置和管理插件。
+本仓库是 [ClawPanel](https://github.com/zhaoxinyi02/ClawPanel) 的官方插件与技能仓库。
+
+- `registry.json`：供插件中心读取插件列表
+- `skills/registry.json`：供技能中心读取自定义技能列表
+
+你后续可以把自己的特色技能放到 `skills/` 目录，并通过 ClawPanel 的技能市场让用户一键安装。
 
 ## 目录结构
 
 ```
 ClawPanel-Plugins/
 ├── registry.json           # 插件注册表（ClawPanel 读取此文件）
+├── skills/
+│   ├── registry.json       # 自定义技能注册表
+│   ├── _template/          # 自定义技能模板（含配置项声明示例）
+│   └── ...                 # 你的自定义技能
 ├── official/               # 官方插件
 │   └── hello-world/        # 示例插件
 │       ├── plugin.json     # 插件元数据
@@ -132,3 +141,27 @@ ClawPanel-Plugins/
 ---
 
 *© 2025 ClawPanel Team*
+## 自定义技能市场
+
+ClawPanel 的技能中心会优先从这个仓库读取：
+
+- GitHub：`skills/registry.json`
+- 失败时回退到 Gitee 镜像
+
+每个技能建议至少包含：
+
+- `id`
+- `name`
+- `description`
+- `version`
+- `author`
+- `tags`
+- `path`
+- `files`
+
+如果技能需要用户配置参数（例如 `apiKey`、`baseUrl`、`modelId`），建议在技能目录里的 `skill.json` 里声明 `config` 数组。
+
+参考模板：
+
+- `skills/_template/SKILL.md`
+- `skills/_template/skill.json`

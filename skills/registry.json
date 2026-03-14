@@ -2,6 +2,17 @@
   "generated_at": "2026-03-15T00:30:00+08:00",
   "skills": [
     {
+      "id": "_template",
+      "name": "Skill Template",
+      "description": "自定义技能模板，演示如何声明名称、版本、描述和可配置项。",
+      "version": "1.0.0",
+      "author": "ClawPanel",
+      "tags": ["template", "config"],
+      "updated_at": 1773505800000,
+      "path": "skills/_template",
+      "files": ["SKILL.md", "skill.json"]
+    },
+    {
       "id": "demo-helper",
       "name": "Demo Helper",
       "description": "一个通用演示技能骨架，用于展示技能结构与编写方式。",
