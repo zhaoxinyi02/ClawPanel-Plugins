@@ -53,7 +53,7 @@
       "tags": ["web", "python", "tools"],
       "updated_at": 1773505800000,
       "path": "skills/web-fetcher",
-      "files": ["skill.json", "index.py"]
+      "files": ["SKILL.md", "skill.json", "index.py"]
     }
   ]
 }
