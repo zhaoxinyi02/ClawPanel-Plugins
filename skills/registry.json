@@ -2,23 +2,6 @@
   "generated_at": "2026-03-18T00:07:22+08:00",
   "skills": [
     {
-      "id": "_template",
-      "name": "Skill Template",
-      "description": "自定义技能模板，演示如何声明名称、版本、描述和可配置项。",
-      "version": "1.0.0",
-      "author": "ClawPanel",
-      "tags": [
-        "template",
-        "config"
-      ],
-      "updated_at": 1773505800000,
-      "path": "skills/_template",
-      "files": [
-        "SKILL.md",
-        "skill.json"
-      ]
-    },
-    {
       "id": "agent-browser",
       "name": "agent-browser",
       "description": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app\", \"login to a site\", \"automate browser actions\", or any task requiring programmatic web interaction.",
@@ -38,21 +21,6 @@
         "templates/authenticated-session.sh",
         "templates/capture-workflow.sh",
         "templates/form-automation.sh"
-      ]
-    },
-    {
-      "id": "agent-reach",
-      "name": "agent-reach",
-      "description": "Give your AI agent eyes to see the entire internet. Install and configure upstream tools for Twitter/X, Reddit, YouTube, GitHub, Bilibili, XiaoHongShu, 小红书 Douyin, LinkedIn, Boss直聘, RSS, and any web page — then call them directly. Use when: (1) setting up platform access tools for the first time, (2) checking which platforms are available, (3) user asks to configure/enable a platform channel. (4) user mentioned Xiaohongshu./用户提到小红书。 Triggers:\"登录\" \"帮我配\", \"帮我添加\", \"帮我安装\", \"agent reach\", \"install channels\",\"小红书\"，“xiaohongshu”， \"configure twitter\", \"enable reddit\".",
-      "version": "1.0.0",
-      "author": "Imported",
-      "tags": [],
-      "updated_at": 1773432849000,
-      "path": "skills/agent-reach",
-      "files": [
-        "SKILL.md",
-        "scripts/xiaohongshu-login-linux-amd64",
-        "scripts/xiaohongshu-mcp-linux-amd64"
       ]
     },
     {
