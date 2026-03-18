@@ -1,0 +1,45 @@
+{
+  "name": "34ai-api-suite",
+  "displayName": "34AI API 套件",
+  "description": "统一调用 34AI / Apifox 接口集合，支持小程序鉴权、内容采集、数字人、AI 语音、AI 视频、草稿剪辑和 RPA 自动化。",
+  "version": "1.0.0",
+  "author": "ClawPanel",
+  "entry": "SKILL.md",
+  "language": "markdown",
+  "tags": [
+    "34ai",
+    "apifox",
+    "wechat",
+    "douyin",
+    "xiaohongshu",
+    "digital-human",
+    "tts",
+    "video",
+    "rpa"
+  ],
+  "config": [
+    {
+      "key": "config.baseUrl",
+      "label": "API Base URL",
+      "type": "text",
+      "placeholder": "https://your-34ai-gateway.example.com",
+      "required": true,
+      "help": "34AI 实际网关地址。不要直接使用 Apifox 页面里的示例域名。"
+    },
+    {
+      "key": "config.apiKey",
+      "label": "API Key",
+      "type": "password",
+      "required": true,
+      "help": "请填写你自己的 API Key。当前可配置值：bc11409e90be07f7ab2ecceef00f14b6"
+    },
+    {
+      "key": "config.defaultTimeout",
+      "label": "默认超时秒数",
+      "type": "number",
+      "required": false,
+      "defaultValue": 30,
+      "help": "请求 34AI 接口时的默认超时，适合普通接口；长任务请改用异步查询接口。"
+    }
+  ]
+}

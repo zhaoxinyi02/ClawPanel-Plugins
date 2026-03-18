@@ -510,6 +510,33 @@
       ]
     },
     {
+      "id": "34ai-api-suite",
+      "name": "34AI API 套件",
+      "description": "统一调用 34AI / Apifox 接口集合，支持小程序鉴权、内容采集、数字人、AI 语音、AI 视频、草稿剪辑和 RPA 自动化。",
+      "version": "1.0.0",
+      "author": "ClawPanel",
+      "tags": [
+        "34ai",
+        "apifox",
+        "wechat",
+        "douyin",
+        "xiaohongshu",
+        "digital-human",
+        "tts",
+        "video",
+        "rpa"
+      ],
+      "updated_at": 1773841200000,
+      "path": "skills/34ai-api-suite",
+      "files": [
+        "SKILL.md",
+        "references/api-catalog.json",
+        "references/api-index.md",
+        "references/examples.md",
+        "skill.json"
+      ]
+    },
+    {
       "id": "web-fetcher",
       "name": "Web Fetcher",
       "description": "抓取网页内容并提取可读文本，适合快速本地网页抓取任务。",
