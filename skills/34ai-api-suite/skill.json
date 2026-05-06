@@ -31,7 +31,7 @@
       "label": "API Key",
       "type": "password",
       "required": true,
-      "help": "请填写你自己的 API Key。当前可配置值：bc11409e90be07f7ab2ecceef00f14b6"
+      "help": "请填写你自己的 API Key"
     },
     {
       "key": "config.defaultTimeout",
