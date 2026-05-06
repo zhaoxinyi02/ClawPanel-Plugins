@@ -25,11 +25,7 @@
 - `config.authScheme`：如果要走 `Authorization` 头，是否加 `Bearer`
 - `config.defaultTimeout`：请求超时时间，默认 30 秒
 
-你当前可以在配置页中填写自己的 API Key：
-
-- `bc11409e90be07f7ab2ecceef00f14b6`
-
-建议把它填进技能配置，不要硬编码在技能文件或聊天内容里。
+请在配置页中填写自己的 API Key，不要硬编码在技能文件或聊天内容里。
 
 ## 调用方式
 这个技能适合按“接口名 + 参数”方式调用。
