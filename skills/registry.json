@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-18T00:07:22+08:00",
+  "generated_at": "2026-05-23T23:44:19+08:00",
   "skills": [
     {
       "id": "agent-browser",
@@ -494,6 +494,28 @@
       "path": "skills/using-superpowers",
       "files": [
         "SKILL.md"
+      ]
+    },
+    {
+      "id": "tweetclaw",
+      "name": "TweetClaw",
+      "description": "OpenClaw helper Skill for TweetClaw X/Twitter automation: scrape tweets, search tweets, search tweet replies, post tweets, post tweet replies, follower export, user lookup, media upload, media download, direct messages, monitor tweets, webhooks, and giveaway draws.",
+      "version": "1.0.0",
+      "author": "Xquik",
+      "tags": [
+        "openclaw",
+        "twitter",
+        "x-twitter",
+        "tweet-scraper",
+        "automation",
+        "mcp",
+        "agent-tools"
+      ],
+      "updated_at": 1779551059934,
+      "path": "skills/tweetclaw",
+      "files": [
+        "SKILL.md",
+        "skill.json"
       ]
     },
     {

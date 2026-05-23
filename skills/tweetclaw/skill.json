@@ -1,0 +1,44 @@
+{
+  "name": "tweetclaw",
+  "displayName": "TweetClaw",
+  "description": "OpenClaw helper Skill for TweetClaw X/Twitter automation: scrape tweets, search replies, post tweets, export followers, inspect users, handle media, monitor tweets, webhooks, direct messages, and giveaway draws.",
+  "version": "1.0.0",
+  "author": "Xquik",
+  "entry": "SKILL.md",
+  "language": "markdown",
+  "tags": [
+    "openclaw",
+    "twitter",
+    "x-twitter",
+    "tweet-scraper",
+    "automation",
+    "mcp",
+    "agent-tools"
+  ],
+  "config": [
+    {
+      "key": "plugins.entries.tweetclaw.config.apiKey",
+      "label": "Xquik API Key",
+      "type": "password",
+      "placeholder": "xq_...",
+      "required": false,
+      "help": "Account-backed X/Twitter automation. Generate the key in the Xquik dashboard."
+    },
+    {
+      "key": "plugins.entries.tweetclaw.config.tempoSigningKey",
+      "label": "MPP Signing Key",
+      "type": "password",
+      "placeholder": "0x...",
+      "required": false,
+      "help": "Optional read-only MPP pay-per-use access. Keep this value local."
+    },
+    {
+      "key": "plugins.entries.tweetclaw.config.baseUrl",
+      "label": "API Base URL",
+      "type": "text",
+      "placeholder": "https://xquik.com",
+      "required": false,
+      "help": "Leave as https://xquik.com unless you run a compatible self-hosted API."
+    }
+  ]
+}
